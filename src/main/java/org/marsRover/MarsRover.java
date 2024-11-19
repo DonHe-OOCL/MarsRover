@@ -1,5 +1,7 @@
 package org.marsRover;
 
+import org.marsRover.action.BaseAction;
+
 public class MarsRover {
 
     private int x;
@@ -9,6 +11,9 @@ public class MarsRover {
     private String direction;
 
     public MarsRover() {
+        this.x = 0;
+        this.y = 0;
+        this.direction = "N";
     }
 
     public String showStatus() {
@@ -16,14 +21,8 @@ public class MarsRover {
     }
 
     public String executeCommand(String command) {
-        String direction = this.direction;
-        if (command.equals("L")) {
-            direction = "W";
-
-        } else if (command.equals("R")) {
-            direction = "E";
-        }
-        this.direction = direction;
+        BaseAction action = BaseAction.getAction(this.direction);
+        action.execute(this, command);
         return showStatus();
     }
 
