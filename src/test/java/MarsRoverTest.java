@@ -57,4 +57,26 @@ public class MarsRoverTest {
         String report = rover.showStatus();
         assertEquals("1:0:E", report);
     }
+
+    @Test
+    public void should_face_north_when_facing_east_and_turn_left() {
+        MarsRover rover = new MarsRover();
+        rover.setX(0);
+        rover.setY(0);
+        rover.setDirection("E");
+        rover.executeCommand("L");
+        String report = rover.showStatus();
+        assertEquals("0:0:N", report);
+    }
+
+    @Test
+    public void should_face_south_when_facing_east_and_turn_right() {
+        MarsRover rover = new MarsRover();
+        rover.setX(0);
+        rover.setY(0);
+        rover.setDirection("E");
+        rover.executeCommand("R");
+        String report = rover.showStatus();
+        assertEquals("0:0:S", report);
+    }
 }
