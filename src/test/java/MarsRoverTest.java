@@ -79,4 +79,15 @@ public class MarsRoverTest {
         String report = rover.showStatus();
         assertEquals("0:0:S", report);
     }
+
+    @Test
+    public void should_face_south_x_0_y_minus_1_when_facing_south_and_move_forward() {
+        MarsRover rover = new MarsRover();
+        rover.setX(0);
+        rover.setY(0);
+        rover.setDirection("S");
+        rover.executeCommand("M");
+        String report = rover.showStatus();
+        assertEquals("0:-1:S", report);
+    }
 }
