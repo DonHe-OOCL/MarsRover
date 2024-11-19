@@ -1,5 +1,8 @@
 import org.junit.jupiter.api.Test;
 import org.marsRover.MarsRover;
+import org.marsRover.common.CommandEnum;
+import org.marsRover.common.DirectionEnum;
+import org.marsRover.handler.MarsRoverHandler;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -10,7 +13,7 @@ public class MarsRoverTest {
         MarsRover rover = new MarsRover();
         rover.setX(0);
         rover.setY(0);
-        rover.setDirection("N");
+        rover.setDirection(DirectionEnum.N.name());
         assertEquals("0:0:N", rover.showStatus());
     }
 
@@ -19,8 +22,8 @@ public class MarsRoverTest {
         MarsRover rover = new MarsRover();
         rover.setX(0);
         rover.setY(0);
-        rover.setDirection("N");
-        rover.executeCommand("L");
+        rover.setDirection(DirectionEnum.N.name());
+        MarsRoverHandler.executeCommand(rover, CommandEnum.L.name());
         String report = rover.showStatus();
         assertEquals("0:0:W", report);
     }
@@ -30,8 +33,8 @@ public class MarsRoverTest {
         MarsRover rover = new MarsRover();
         rover.setX(0);
         rover.setY(0);
-        rover.setDirection("N");
-        rover.executeCommand("R");
+        rover.setDirection(DirectionEnum.N.name());
+        MarsRoverHandler.executeCommand(rover, CommandEnum.R.name());
         String report = rover.showStatus();
         assertEquals("0:0:E", report);
     }
@@ -41,8 +44,8 @@ public class MarsRoverTest {
         MarsRover rover = new MarsRover();
         rover.setX(0);
         rover.setY(0);
-        rover.setDirection("N");
-        rover.executeCommand("M");
+        rover.setDirection(DirectionEnum.N.name());
+        MarsRoverHandler.executeCommand(rover, CommandEnum.M.name());
         String report = rover.showStatus();
         assertEquals("0:1:N", report);
     }
@@ -52,8 +55,8 @@ public class MarsRoverTest {
         MarsRover rover = new MarsRover();
         rover.setX(0);
         rover.setY(0);
-        rover.setDirection("E");
-        rover.executeCommand("M");
+        rover.setDirection(DirectionEnum.E.name());
+        MarsRoverHandler.executeCommand(rover, CommandEnum.M.name());
         String report = rover.showStatus();
         assertEquals("1:0:E", report);
     }
@@ -63,8 +66,8 @@ public class MarsRoverTest {
         MarsRover rover = new MarsRover();
         rover.setX(0);
         rover.setY(0);
-        rover.setDirection("E");
-        rover.executeCommand("L");
+        rover.setDirection(DirectionEnum.E.name());
+        MarsRoverHandler.executeCommand(rover, CommandEnum.L.name());
         String report = rover.showStatus();
         assertEquals("0:0:N", report);
     }
@@ -74,8 +77,8 @@ public class MarsRoverTest {
         MarsRover rover = new MarsRover();
         rover.setX(0);
         rover.setY(0);
-        rover.setDirection("E");
-        rover.executeCommand("R");
+        rover.setDirection(DirectionEnum.E.name());
+        MarsRoverHandler.executeCommand(rover, CommandEnum.R.name());
         String report = rover.showStatus();
         assertEquals("0:0:S", report);
     }
@@ -85,8 +88,8 @@ public class MarsRoverTest {
         MarsRover rover = new MarsRover();
         rover.setX(0);
         rover.setY(0);
-        rover.setDirection("S");
-        rover.executeCommand("M");
+        rover.setDirection(DirectionEnum.S.name());
+        MarsRoverHandler.executeCommand(rover, CommandEnum.M.name());
         String report = rover.showStatus();
         assertEquals("0:-1:S", report);
     }
@@ -96,8 +99,8 @@ public class MarsRoverTest {
         MarsRover rover = new MarsRover();
         rover.setX(0);
         rover.setY(0);
-        rover.setDirection("S");
-        rover.executeCommand("L");
+        rover.setDirection(DirectionEnum.S.name());
+        MarsRoverHandler.executeCommand(rover, CommandEnum.L.name());
         String report = rover.showStatus();
         assertEquals("0:0:E", report);
     }
@@ -107,8 +110,8 @@ public class MarsRoverTest {
         MarsRover rover = new MarsRover();
         rover.setX(0);
         rover.setY(0);
-        rover.setDirection("S");
-        rover.executeCommand("R");
+        rover.setDirection(DirectionEnum.S.name());
+        MarsRoverHandler.executeCommand(rover, CommandEnum.R.name());
         String report = rover.showStatus();
         assertEquals("0:0:W", report);
     }
@@ -118,8 +121,8 @@ public class MarsRoverTest {
         MarsRover rover = new MarsRover();
         rover.setX(0);
         rover.setY(0);
-        rover.setDirection("W");
-        rover.executeCommand("M");
+        rover.setDirection(DirectionEnum.W.name());
+        MarsRoverHandler.executeCommand(rover, CommandEnum.M.name());
         String report = rover.showStatus();
         assertEquals("-1:0:W", report);
     }
@@ -129,8 +132,8 @@ public class MarsRoverTest {
         MarsRover rover = new MarsRover();
         rover.setX(0);
         rover.setY(0);
-        rover.setDirection("W");
-        rover.executeCommand("L");
+        rover.setDirection(DirectionEnum.W.name());
+        MarsRoverHandler.executeCommand(rover, CommandEnum.L.name());
         String report = rover.showStatus();
         assertEquals("0:0:S", report);
     }
@@ -140,8 +143,8 @@ public class MarsRoverTest {
         MarsRover rover = new MarsRover();
         rover.setX(0);
         rover.setY(0);
-        rover.setDirection("W");
-        rover.executeCommand("R");
+        rover.setDirection(DirectionEnum.W.name());
+        MarsRoverHandler.executeCommand(rover, CommandEnum.R.name());
         String report = rover.showStatus();
         assertEquals("0:0:N", report);
     }

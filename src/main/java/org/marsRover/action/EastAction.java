@@ -1,16 +1,17 @@
 package org.marsRover.action;
 
 import org.marsRover.MarsRover;
+import org.marsRover.common.DirectionEnum;
 
 public class EastAction extends BaseAction {
     @Override
     public void turnLeft(MarsRover marsRover) {
-        marsRover.setDirection("N");
+        marsRover.setDirection(DirectionEnum.N.name());
     }
 
     @Override
     public void turnRight(MarsRover marsRover) {
-        marsRover.setDirection("S");
+        marsRover.setDirection(DirectionEnum.S.name());
     }
 
     @Override

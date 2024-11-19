@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b1b42fd-e278-4ee0-8d0a-a7dead8cd079" name="Changes" comment="[MarsRover] feat: turn left and turn right">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/marsRover/action/BaseAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/marsRover/action/EastAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/marsRover/action/NorthAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/marsRover/action/SouthAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/marsRover/action/WestAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/marsRover/handler/MarsRoverHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8b1b42fd-e278-4ee0-8d0a-a7dead8cd079" name="Changes" comment="[MarsRover] test: Supplementary westAction test cases">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/marsRover/common/CommandEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/marsRover/common/DirectionEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/marsRover/MarsRover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/marsRover/MarsRover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/marsRover/action/BaseAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/marsRover/action/BaseAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/marsRover/action/EastAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/marsRover/action/EastAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/marsRover/action/NorthAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/marsRover/action/NorthAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/marsRover/action/SouthAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/marsRover/action/SouthAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/marsRover/action/WestAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/marsRover/action/WestAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/marsRover/handler/MarsRoverHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/marsRover/handler/MarsRoverHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MarsRoverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MarsRoverTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +29,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -46,7 +49,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.MarsRoverTest.executor": "Run",
+    "Gradle.MarsRoverTest.should_face_east_x_1_y_0_when_facing_east_and_move_forward.executor": "Run",
     "Gradle.MarsRoverTest.should_face_west_when_facing_north_and_turn_left.executor": "Run",
+    "Gradle.MarsRoverTest.should_initialize_mars_rover.executor": "Run",
     "Gradle.MarsRoverTest.testMarsRover.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -60,7 +65,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.MarsRoverTest.should_face_west_when_facing_north_and_turn_left">
+  <component name="RunManager" selected="Gradle.MarsRoverTest">
     <configuration name="MarsRoverTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -85,6 +90,30 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="MarsRoverTest.should_face_east_x_1_y_0_when_facing_east_and_move_forward" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;MarsRoverTest.should_face_east_x_1_y_0_when_facing_east_and_move_forward&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="MarsRoverTest.should_face_west_when_facing_north_and_turn_left" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -99,6 +128,30 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;MarsRoverTest.should_face_west_when_facing_north_and_turn_left&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MarsRoverTest.should_initialize_mars_rover" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;MarsRoverTest.should_initialize_mars_rover&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -135,8 +188,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.MarsRoverTest.should_face_west_when_facing_north_and_turn_left" />
         <item itemvalue="Gradle.MarsRoverTest" />
+        <item itemvalue="Gradle.MarsRoverTest.should_initialize_mars_rover" />
+        <item itemvalue="Gradle.MarsRoverTest.should_face_east_x_1_y_0_when_facing_east_and_move_forward" />
+        <item itemvalue="Gradle.MarsRoverTest.should_face_west_when_facing_north_and_turn_left" />
         <item itemvalue="Gradle.MarsRoverTest.testMarsRover" />
       </list>
     </recent_temporary>
@@ -156,7 +211,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731999356221</updated>
-      <workItem from="1731999357259" duration="4321000" />
+      <workItem from="1731999357259" duration="9684000" />
     </task>
     <task id="LOCAL-00001" summary="[MarsRover] chore:init project">
       <option name="closed" value="true" />
@@ -182,7 +237,87 @@
       <option name="project" value="LOCAL" />
       <updated>1732002174822</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[MarsRover] refactor: Use state mode to represent machine operation">
+      <option name="closed" value="true" />
+      <created>1732003864559</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732003864559</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[MarsRover] test: test should face east x 1 y 0 when facing east and move forward">
+      <option name="closed" value="true" />
+      <created>1732004630485</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732004630485</updated>
+    </task>
+    <task id="LOCAL-00006" summary="[MarsRover] feat: add EastAction turn left, turn right, forward">
+      <option name="closed" value="true" />
+      <created>1732004804491</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1732004804491</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[MarsRover] test: Supplementary eastAction test cases">
+      <option name="closed" value="true" />
+      <created>1732005004142</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1732005004142</updated>
+    </task>
+    <task id="LOCAL-00008" summary="[MarsRover] test: add southAction test case">
+      <option name="closed" value="true" />
+      <created>1732005151168</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1732005151168</updated>
+    </task>
+    <task id="LOCAL-00009" summary="[MarsRover] feat: southAction turn left, turn right and forward">
+      <option name="closed" value="true" />
+      <created>1732005324841</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1732005324841</updated>
+    </task>
+    <task id="LOCAL-00010" summary="[MarsRover] test: Supplementary southAction test cases">
+      <option name="closed" value="true" />
+      <created>1732005485174</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1732005485174</updated>
+    </task>
+    <task id="LOCAL-00011" summary="[MarsRover] test: add westAction test case">
+      <option name="closed" value="true" />
+      <created>1732005546767</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1732005546767</updated>
+    </task>
+    <task id="LOCAL-00012" summary="[MarsRover] feat: add westAction turn left, turn right and forward">
+      <option name="closed" value="true" />
+      <created>1732005610777</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1732005610777</updated>
+    </task>
+    <task id="LOCAL-00013" summary="[MarsRover] test: Supplementary westAction test cases">
+      <option name="closed" value="true" />
+      <created>1732005704935</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1732005704935</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +338,16 @@
     <MESSAGE value="[MarsRover] chore:init project" />
     <MESSAGE value="[MarsRover] test: test should initialize mars rover and should face west when facing north and turn left" />
     <MESSAGE value="[MarsRover] feat: turn left and turn right" />
-    <option name="LAST_COMMIT_MESSAGE" value="[MarsRover] feat: turn left and turn right" />
+    <MESSAGE value="[MarsRover] refactor: Use state mode to represent machine operation" />
+    <MESSAGE value="[MarsRover] test: test should face east x 1 y 0 when facing east and move forward" />
+    <MESSAGE value="[MarsRover] feat: add EastAction turn left, turn right, forward" />
+    <MESSAGE value="[MarsRover] test: Supplementary eastAction test cases" />
+    <MESSAGE value="[MarsRover] test: add southAction test case" />
+    <MESSAGE value="[MarsRover] feat: southAction turn left, turn right and forward" />
+    <MESSAGE value="[MarsRover] test: Supplementary southAction test cases" />
+    <MESSAGE value="[MarsRover] test: add westAction test case" />
+    <MESSAGE value="[MarsRover] feat: add westAction turn left, turn right and forward" />
+    <MESSAGE value="[MarsRover] test: Supplementary westAction test cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="[MarsRover] test: Supplementary westAction test cases" />
   </component>
 </project>

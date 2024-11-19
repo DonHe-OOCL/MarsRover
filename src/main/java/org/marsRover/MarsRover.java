@@ -1,6 +1,7 @@
 package org.marsRover;
 
 import org.marsRover.action.BaseAction;
+import org.marsRover.common.DirectionEnum;
 
 public class MarsRover {
 
@@ -13,16 +14,11 @@ public class MarsRover {
     public MarsRover() {
         this.x = 0;
         this.y = 0;
-        this.direction = "N";
+        this.direction = DirectionEnum.N.toString();
     }
 
     public String showStatus() {
         return x + ":" + y + ":" + direction;
-    }
-
-    public void executeCommand(String command) {
-        BaseAction action = BaseAction.getAction(this.direction);
-        action.execute(this, command);
     }
 
     public int getX() {

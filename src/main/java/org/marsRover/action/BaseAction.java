@@ -1,28 +1,29 @@
 package org.marsRover.action;
 
 import org.marsRover.MarsRover;
+import org.marsRover.common.CommandEnum;
+import org.marsRover.common.DirectionEnum;
 
 public abstract class BaseAction {
 
-    public static BaseAction getAction(String direction) {
+    public static BaseAction getAction(DirectionEnum direction) {
         return switch (direction) {
-            case "N" -> new NorthAction();
-            case "S" -> new SouthAction();
-            case "E" -> new EastAction();
-            case "W" -> new WestAction();
-            default -> null;
+            case N -> new NorthAction();
+            case S -> new SouthAction();
+            case E -> new EastAction();
+            case W -> new WestAction();
         };
     }
 
-    public void execute(MarsRover marsRover, String command) {
+    public void execute(MarsRover marsRover, CommandEnum command) {
         switch (command) {
-            case "L":
+            case L:
                 turnLeft(marsRover);
                 break;
-            case "R":
+            case R:
                 turnRight(marsRover);
                 break;
-            case "M":
+            case M:
                 forward(marsRover);
                 break;
         }
