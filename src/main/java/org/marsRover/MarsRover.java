@@ -20,10 +20,9 @@ public class MarsRover {
         return x + ":" + y + ":" + direction;
     }
 
-    public String executeCommand(String command) {
+    public void executeCommand(String command) {
         BaseAction action = BaseAction.getAction(this.direction);
         action.execute(this, command);
-        return showStatus();
     }
 
     public int getX() {

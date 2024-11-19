@@ -7,7 +7,7 @@ public abstract class BaseAction {
     public static BaseAction getAction(String direction) {
         return switch (direction) {
             case "N" -> new NorthAction();
-//            case "S" -> new SouthAction();
+            case "S" -> new SouthAction();
             case "E" -> new EastAction();
 //            case "W" -> new WestAction();
             default -> null;
