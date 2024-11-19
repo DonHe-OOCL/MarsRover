@@ -20,9 +20,41 @@ public class MarsRoverTest {
         rover.setX(0);
         rover.setY(0);
         rover.setDirection("N");
-        String currentStatus = rover.executeCommand("L");
+        rover.executeCommand("L");
         String report = rover.showStatus();
-        assertEquals("0:0:W", currentStatus);
         assertEquals("0:0:W", report);
+    }
+
+    @Test
+    public void should_face_east_when_facing_north_and_turn_right() {
+        MarsRover rover = new MarsRover();
+        rover.setX(0);
+        rover.setY(0);
+        rover.setDirection("N");
+        rover.executeCommand("R");
+        String report = rover.showStatus();
+        assertEquals("0:0:E", report);
+    }
+
+    @Test
+    public void should_face_north_x_0_y_1_when_facing_north_and_move_forward() {
+        MarsRover rover = new MarsRover();
+        rover.setX(0);
+        rover.setY(0);
+        rover.setDirection("N");
+        rover.executeCommand("M");
+        String report = rover.showStatus();
+        assertEquals("0:1:N", report);
+    }
+
+    @Test
+    public void should_face_east_x_1_y_0_when_facing_east_and_move_forward() {
+        MarsRover rover = new MarsRover();
+        rover.setX(0);
+        rover.setY(0);
+        rover.setDirection("E");
+        rover.executeCommand("M");
+        String report = rover.showStatus();
+        assertEquals("1:0:E", report);
     }
 }
