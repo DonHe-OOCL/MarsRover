@@ -8,7 +8,7 @@ public abstract class BaseAction {
         return switch (direction) {
             case "N" -> new NorthAction();
 //            case "S" -> new SouthAction();
-//            case "E" -> new EastAction();
+            case "E" -> new EastAction();
 //            case "W" -> new WestAction();
             default -> null;
         };
