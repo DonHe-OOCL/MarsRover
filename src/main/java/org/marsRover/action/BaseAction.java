@@ -9,7 +9,7 @@ public abstract class BaseAction {
             case "N" -> new NorthAction();
             case "S" -> new SouthAction();
             case "E" -> new EastAction();
-//            case "W" -> new WestAction();
+            case "W" -> new WestAction();
             default -> null;
         };
     }
