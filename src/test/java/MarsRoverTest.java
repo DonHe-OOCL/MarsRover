@@ -138,4 +138,14 @@ public class MarsRoverTest {
         String report = rover.showStatus();
         assertEquals("0:0:N", report);
     }
+
+    @Test
+    public void should_face_south_x_minus_1_y_minus_1_when_facing_north_and_move_forward() {
+        MarsRover rover = new MarsRover();
+        rover.updateCoordinate(0, 0);
+        rover.setAction(new NorthAction());
+        MarsRoverHandler.executeCommand(rover, "LMLM");
+        String report = rover.showStatus();
+        assertEquals("-1:-1:S", report);
+    }
 }
