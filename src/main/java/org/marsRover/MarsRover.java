@@ -14,11 +14,11 @@ public class MarsRover {
     public MarsRover() {
         this.x = 0;
         this.y = 0;
-        this.direction = DirectionEnum.N.toString();
+        this.direction = DirectionEnum.N.name();
     }
 
     public String showStatus() {
-        return x + ":" + y + ":" + direction;
+        return String.format("%d:%d:%s", x, y, direction);
     }
 
     public int getX() {
