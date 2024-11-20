@@ -1,7 +1,6 @@
 package org.marsRover;
 
 import org.marsRover.action.BaseAction;
-import org.marsRover.common.DirectionEnum;
 
 public class MarsRover {
 
