@@ -5,17 +5,28 @@ import org.marsRover.common.DirectionEnum;
 
 public class NorthAction extends BaseAction{
     @Override
+    public DirectionEnum getDirection() {
+        return DirectionEnum.N;
+    }
+
+    // TODO
+    @Override
     public void turnLeft(MarsRover marsRover) {
-        marsRover.setDirection(DirectionEnum.W.name());
+        marsRover.setAction(actionMap.get(DirectionEnum.W));
     }
 
     @Override
     public void turnRight(MarsRover marsRover) {
-        marsRover.setDirection(DirectionEnum.E.name());
+        marsRover.setAction(actionMap.get(DirectionEnum.E));
     }
 
     @Override
     public void forward(MarsRover marsRover) {
-        marsRover.setY(marsRover.getY() + 1);
+        marsRover.updateCoordinate(marsRover.getX(), marsRover.getY() + 1);
+    }
+
+    @Override
+    public void backward(MarsRover marsRover) {
+        marsRover.updateCoordinate(marsRover.getX(), marsRover.getY() - 1);
     }
 }

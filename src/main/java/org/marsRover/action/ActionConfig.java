@@ -1,5 +1,6 @@
 package org.marsRover.action;
 
+import org.marsRover.common.CommandEnum;
 import org.marsRover.common.DirectionEnum;
 
 import java.util.HashMap;

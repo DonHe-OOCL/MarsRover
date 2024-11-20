@@ -8,13 +8,14 @@ import org.marsRover.common.DirectionEnum;
 
 public class MarsRoverHandler extends ActionConfig {
 
+    public static void initMarRover(MarsRover marsRover) {
+        marsRover.setAction(actionMap.get(DirectionEnum.N));
+        marsRover.updateCoordinate(0, 0);
+    }
+
     public static void executeCommand(MarsRover marsRover, String command) {
         CommandEnum commandEnum = CommandEnum.valueOf(command);
-        DirectionEnum directionEnum = DirectionEnum.valueOf(marsRover.getDirection());
-        BaseAction action = actionMap.get(directionEnum);
-        if (action == null) {
-            return;
-        }
+        BaseAction action = marsRover.getAction();
         action.execute(marsRover, commandEnum);
     }
 }

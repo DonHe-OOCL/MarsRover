@@ -5,43 +5,36 @@ import org.marsRover.common.DirectionEnum;
 
 public class MarsRover {
 
-    private int x;
+    private final Coordinate coordinate;
 
-    private int y;
-
-    private String direction;
+    private BaseAction action;
 
     public MarsRover() {
-        this.x = 0;
-        this.y = 0;
-        this.direction = DirectionEnum.N.name();
+        coordinate = new Coordinate();
     }
 
     public String showStatus() {
-        return String.format("%d:%d:%s", x, y, direction);
+        return String.format("%d:%d:%s", coordinate.getX(), coordinate.getY(), action.getDirection().name());
     }
 
     public int getX() {
-        return x;
-    }
-
-    public void setX(int x) {
-        this.x = x;
+        return coordinate.getX();
     }
 
     public int getY() {
-        return y;
+        return coordinate.getY();
     }
 
-    public void setY(int y) {
-        this.y = y;
+    public void updateCoordinate(int x, int y) {
+        coordinate.setX(x);
+        coordinate.setY(y);
     }
 
-    public String getDirection() {
-        return direction;
+    public void setAction(BaseAction action) {
+        this.action = action;
     }
 
-    public void setDirection(String direction) {
-        this.direction = direction;
+    public BaseAction getAction() {
+        return action;
     }
 }
