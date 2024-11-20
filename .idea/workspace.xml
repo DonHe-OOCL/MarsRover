@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b1b42fd-e278-4ee0-8d0a-a7dead8cd079" name="Changes" comment="[MarsRover] test: Supplementary westAction test cases">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/marsRover/common/CommandEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/marsRover/common/DirectionEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/marsRover/MarsRover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/marsRover/MarsRover.java" afterDir="false" />
+    <list default="true" id="8b1b42fd-e278-4ee0-8d0a-a7dead8cd079" name="Changes" comment="[MarsRover] chore: add ORID.md">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/marsRover/action/ActionConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/marsRover/action/BaseAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/marsRover/action/BaseAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/marsRover/action/EastAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/marsRover/action/EastAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/marsRover/action/NorthAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/marsRover/action/NorthAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/marsRover/action/SouthAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/marsRover/action/SouthAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/marsRover/action/WestAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/marsRover/action/WestAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/marsRover/handler/MarsRoverHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/marsRover/handler/MarsRoverHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MarsRoverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MarsRoverTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +30,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 5
@@ -211,7 +208,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731999356221</updated>
-      <workItem from="1731999357259" duration="9684000" />
+      <workItem from="1731999357259" duration="12456000" />
     </task>
     <task id="LOCAL-00001" summary="[MarsRover] chore:init project">
       <option name="closed" value="true" />
@@ -317,7 +314,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732005704935</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="[MarsRover] refactor: use enum">
+      <option name="closed" value="true" />
+      <created>1732009167132</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1732009167132</updated>
+    </task>
+    <task id="LOCAL-00015" summary="[MarsRover] chore: add ORID.md">
+      <option name="closed" value="true" />
+      <created>1732009820734</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1732009820734</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,6 +361,8 @@
     <MESSAGE value="[MarsRover] test: add westAction test case" />
     <MESSAGE value="[MarsRover] feat: add westAction turn left, turn right and forward" />
     <MESSAGE value="[MarsRover] test: Supplementary westAction test cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="[MarsRover] test: Supplementary westAction test cases" />
+    <MESSAGE value="[MarsRover] refactor: use enum" />
+    <MESSAGE value="[MarsRover] chore: add ORID.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="[MarsRover] chore: add ORID.md" />
   </component>
 </project>
